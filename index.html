@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <div class="mg-logo">
+            <img src="mg-logo.webp" class="logo-img" alt="" />
+          </div>
+
+      <nav id="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Gallery</a>
+
+        <div>
+          <button class="btn">Sign in</button>
+          <button class="btn">Sign up</button>
+        </div>
+      </nav>
+
+      <button class="burgerBtn" onclick="openMenu()">
+        <img src="list.svg" alt="Burger" />
+      </button>
+    </header>
+
+    <script>
+      let nav = document.getElementById("navigation");
+
+      function openMenu() {
+        nav.classList.toggle("openedNav");
+      }
+    </script>
+  </body>
+</html>
